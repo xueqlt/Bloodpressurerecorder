@@ -11,7 +11,7 @@
         android:layout_marginTop="103dp"
         android:baselineAligned="false"
         android:digits="0123456789"
-        android:hint="Enter data"
+        android:hint="请输入高压"
         android:inputType="number" />
 
     <EditText
@@ -21,7 +21,7 @@
         android:layout_below="@id/editTextData1"
         android:layout_marginTop="20dp"
         android:digits="0123456789"
-        android:hint="Enter data"
+        android:hint="请输入低压"
         android:inputType="number" />
 
     <Button

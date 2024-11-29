@@ -37,10 +37,15 @@ public class handin extends AppCompatActivity {
 
     private void saveData() {
 
-            Toast.makeText(handin.this, "Button Clicked!", Toast.LENGTH_SHORT).show();
 
             String data1 = editTextData1.getText().toString();
             String data2 = editTextData2.getText().toString();
+
+            if (data1.isEmpty() || data2.isEmpty()) {
+                Toast.makeText(this, "Both fields are required!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String timestamp = dateFormat.format(new Date());
 
